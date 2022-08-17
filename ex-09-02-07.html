@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quadratic</title>
+</head>
+<body>
+   <script>
+      var a = +prompt('nhap so a');
+      var b = +prompt('nhap so b');
+      var c = +prompt('nhap so c');
+      var x;
+      var x1;
+      var delta;
+      delta = b*b - 4*a*c;
+      if ( delta < 0){
+         alert('phuong trinh vo nghiem')
+      }else if (delta == 0){
+         x = -b/2*a;
+         alert('phuong trinh co nghiem kep' + x);
+      }else if( delta > 0){
+         x = ( -b - Math.sqrt(delta))/2;
+         x1 = ( -b + Math.sqrt(delta))/2;
+         alert('phuong trinh co nghiem x : ' + x + " va x= " + x1);
+         
+      }
+   </script>
+</body>
+</html>

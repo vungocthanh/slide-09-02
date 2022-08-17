@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+   var totalYear = prompt('Tong thu nhap 1 thang')
+      var thue;
+      if ( totalYear < 5){
+         thue = totalYear * 5 / 100;
+      } else if (totalYear > 5 && totalYear <=10){
+         thue = totalYear * 10 / 100 - 250000;
+      } else if ( totalYear > 10 && totalYear <= 18){
+         thue = totalYear * 15 / 100 - 750000;
+      } else if (totalYear > 18 && totalYear <= 32){
+         thue = totalYear * 20 / 100 - 1650000;
+      } else if ( totalYear > 32 && totalYear <= 52){
+         thue = totalYear * 25 / 100 - 3250000;
+      } else if(totalYear > 52 && totalYear <= 80){
+         thue = totalYear * 30 / 100 - 5850000;
+      }else{
+         thue = totalYear * 35 / 100 - 9850000;
+      }
+      document.write( ' thua phai dong la: ' + thue)
+   </script>      
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tinhs gia dien</title>
+</head>
+<body>
+   <script>
+      var number = Number(prompt('nhap so KgW dien'))
+      var toltal;
+      var thue = 8/100;
+      if ( number <= 50 ){
+         toltal = 1678 * number;
+      }else if ( number <= 100 && number > 50){
+         toltal = (1678 * 50) + (1734 * (number - 50));
+      } else if (number > 100 && number <= 200){
+         toltal = 1678 *50 + 1734 * 50 + (number - 100) * 2014;
+      } else if (number > 200 && number <= 300 ){
+         toltal =  toltal = 1678 *50 + 1734 * 50 + 100 * 2014 + (number-200) *2536;
+      } else{
+         toltal =  toltal = 1678 *50 + 1734 * 50 + 100 * 2014 + 200 *2536 + (number -300) * 2834;
+      }
+      document.write('Tong tien hang thang: ' + (toltal+toltal*thue))
+   </script>
+</body>
+</html>
